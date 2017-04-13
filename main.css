@@ -1,0 +1,157 @@
+body{
+	margin: 0px;
+	
+}
+
+.left-pad{
+	padding-left: 10px;
+}
+
+.left-margin{
+	margin-left: 20px;
+}
+
+.row{
+	width: 100%;
+}
+
+.top-bar{
+	background-color: #E8BC66; 
+	padding: 15px 5px 0px 5px;
+}
+
+.pull-right{
+	float: right;
+	padding-right:30px;
+}
+
+#search-box{
+	border: none;
+	width:80%;
+	margin-bottom: 20px;
+    border-radius: 25px;
+    vertical-align: middle;
+    padding: 5px
+}
+
+#search-box::placeholder{
+	font: 12px Lucida Sans Unicode;
+	color: #cccccc;
+}
+
+table {
+	font:11px Verdana;
+	font-weight: bold;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+	/*border-bottom: 1px solid #e0e0eb;*/
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+	border-top: 1px white solid;
+    background-color: #530909;
+    color: white;
+}
+
+th:first-child{
+	border-left:1px white solid;
+	border-top-left-radius:10px;
+}
+
+th:last-child{
+	border-right: 1px white solid;
+	border-top-right-radius:10px;
+}
+
+.done{
+	disabled: true;
+	background-color: #f2f2f2;
+	color: #8c8c8c;
+}
+
+.cancelled{
+	background-color: #ffc1c1;
+}
+
+.list{
+	background: white url('Resources/dropdown.png') no-repeat;
+	background-size: 20px;
+    background-position:  right 0px center;
+	-webkit-appearance: none;
+	padding: 0px 40px 0px 7px;
+	border-radius:5px;
+}
+
+.cancelled .list{
+	border: 2px solid #ff3333;
+}
+
+.done .list{
+	border: 2px solid #8585ad;
+	background-color: #d9d9d9;
+
+}
+
+.progress .list{
+	border: 2px solid #530909;
+	background: url('Resources/dropdown-colored.png') no-repeat;
+    background-size: 20px;
+    background-position:  right 0px center;
+}
+
+.done:nth-child(odd){
+	background-color: #d9d9d9;
+}
+
+.progress:nth-child(odd){
+	background-color: #f3f2d8;
+}
+
+.progress:nth-child(odd) .list{
+	background-color: #f3f2d8;
+}
+
+img{
+	max-height:100%;
+	width:30px;
+	height:30px;
+}
+
+input::-webkit-calendar-picker-indicator {
+              opacity: 100;
+           }
+
+.content{
+	clear: right;
+}
+
+@media screen and (max-width: 1150px){ 
+    #search-box{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 600px){ 
+    #search-box{
+		width: 40%;
+	}
+
+@media screen and (max-width: 390px){ 
+    #search-box{
+		width: 60%;
+	}
+    .pull-right{
+	   float:none;
+	}
+	.left-margin{
+	margin-left: 10px;
+}
+}
